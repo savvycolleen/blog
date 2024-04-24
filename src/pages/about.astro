@@ -1,5 +1,14 @@
 ---
+const pageTitle = "About Me";
 
+const identity = {
+	firstName: "Savannah",
+	country: "United States",
+	occupation: "Software Engineer",
+	hobbies: ["reading", "learning", "crocheting"],
+};
+
+const skills = ["HTML", "CSS", "Javascript", "React", "Astro", "Next.js", "Node.js", "MongoDB"];
 ---
 
 <html lang="en">
@@ -8,16 +17,27 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
     <a href="/">Home</a>
     <a href="/about/">About</a>
     <a href="/blog/">Blog</a>
-    <h1>About This Site</h1>
+    <h1>{pageTitle}</h1>
   
-    <p>I am working through Astro's introductory tutorial.</p>
+    <p>Thanks for popping over to read about me! I love making new connections & friends, so I'm honored you are here.</p>
   
-    <p>I am planning to use this site to learn Astro so that I can build a couple of other projects with it. I also plan to write about my experience as a career changer in the dev world, and my thoughts while building projects & tutorials. Check back in to see what's going on!</p>
+    <p>Here are some facts about me:</p>
+		<ul>
+			<li>My name is {identity.firstName}</li>
+			<li>I live in {identity.country}, and I am a {identity.occupation}.</li>
+			{identity.hobbies.length >= 2 &&
+				<li>Two of my hobbies are: {identity.hobbies[0]} and {identity.hobbies[1]}.</li>
+			}
+		</ul>
+		<p>My skills are:</p>
+		<ul>
+			{skills.map((skill) => <li>{skill}</li>)}
+		</ul>
 	</body>
 </html>
