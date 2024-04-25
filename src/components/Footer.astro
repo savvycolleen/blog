@@ -1,10 +1,11 @@
 ---
-const platform = "github";
-const username = "savvycolleen";
-const portfolio = "https://savannah-portfolio.netlify.app/";
+import Social from "./Social.astro"
 
 ---
 
-<footer>
-  <p>Learn more about my projects on <a href={`https://www.${platform}.com/${username}`}>{platform}</a> and checkout my <a href ={portfolio}!>portfolio</a>!</p>
+
+<footer class="nav-links">
+   <Social platform="github" link="https://github.com/savvycolleen" />
+   <Social platform="portfolio" link="https://savannah-portfolio.netlify.app/" />
+   <Social platform="linkedin" link="https://www.linkedin.com/in/savannah-acevedo-4ba960123/" />
 </footer>
