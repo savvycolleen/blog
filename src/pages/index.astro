@@ -1,37 +1,11 @@
 ---
-import '../styles/globals.css';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
-const pageTitle = "Home Page"
-
+import BaseLayout from "../layouts/BaseLayout.astro";
+const pageTitle ="Home Page";
 
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-		<!-- <style>
-			.heading {
-				font-family: 'Times New Roman', Times, serif;
-				font-size: 7rem;
-				text-align: right;
-				border: 4px solid black;
-				min-width: 516px;
-			}
-		</style> -->
-	</head>
-	<body>
-		<Header />
-		<h1 class="heading">savvydoes</h1>
-		<h1>Welcome to the blog of Savannah Acevedo</h1>
-		<h1>{pageTitle}</h1>
-		<Footer />
-		<script>
-			import "../scripts/menu";
-		</script>
-	</body>
-</html>
+<BaseLayout pageTitle={pageTitle}>
+	<h1>savvydoes</h1>
+	<h1>Welcome to the blog of Savannah Acevedo</h1>
+	<h2>My Awesome Blog Subtitle</h2>
+</BaseLayout>
