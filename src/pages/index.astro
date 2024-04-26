@@ -14,7 +14,7 @@ const pageTitle = "Home Page"
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{pageTitle}</title>
-		<style>
+		<!-- <style>
 			.heading {
 				font-family: 'Times New Roman', Times, serif;
 				font-size: 7rem;
@@ -22,7 +22,7 @@ const pageTitle = "Home Page"
 				border: 4px solid black;
 				min-width: 516px;
 			}
-		</style>
+		</style> -->
 	</head>
 	<body>
 		<Header />
@@ -31,9 +31,7 @@ const pageTitle = "Home Page"
 		<h1>{pageTitle}</h1>
 		<Footer />
 		<script>
-			document.querySelector('.hamburger').addEventListener('click', () => {
-				document.querySelector('.nav-links').classList.toggle('expanded');
-			});
+			import "../scripts/menu";
 		</script>
 	</body>
 </html>
