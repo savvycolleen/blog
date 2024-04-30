@@ -1,0 +1,28 @@
+---
+import SavImg from "./SavImg.astro"
+---
+
+<section>
+  <div>
+    <h1>Welcome to the blog of Savannah Acevedo</h1>
+    <h2>I'm really glad you're here</h2>
+  </div>
+  <div>
+    <SavImg imagePath={'../assets/portfolio.png'} altText="portfolio image" />
+  </div>
+</section>
+
+<style>
+	section {
+		display: flex;
+	}
+  @media screen and (max-width: 715px){
+    section {
+      display: block;
+    }
+    div {
+      padding: 1rem;
+      margin: auto;
+    }
+  }
+</style>
