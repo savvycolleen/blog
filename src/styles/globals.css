@@ -25,8 +25,14 @@ html.dark {
   color: #fff;
 }
 
-.dark .nav-links a {
+.dark .nav-links a:link,
+.dark .nav-links a:visited {
   color: #fff;
+}
+
+.dark .nav-links a:hover {
+  background-color: #00ff33;
+  color:#000000;
 }
 
 /* nav styles */
@@ -48,7 +54,7 @@ html.dark {
   width: 100%;
   top: 5rem;
   left: 48px;
-  background-color: white;
+  /* background-color:  */
   display: none;
   margin: 0;
 }
@@ -61,11 +67,11 @@ html.dark {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: white;
 }
 
+.nav-links a:link,
 .nav-links a:visited {
-  color:#000000;
+  color: black;
 }
 
 .nav-links a:hover,
