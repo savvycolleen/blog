@@ -2,22 +2,30 @@
 
 ---
 
-<section class="dark">
+<section class="section dark">
   <h1 class="hero">savvydoes</h1>
 </section>
 
 <style>
+
+  .dark {
+    border-bottom: 1px white solid;
+  }
+
   .hero {
     font-family: "Playfair Display", sans-serif;
-    font-size: 8rem;
+    /* font-size: 8rem; */
+    font-size: clamp(4rem, 1.1429rem + 12.1905vw, 8rem);
+    text-align: right;
+    vertical-align: bottom;
+    padding-top: min(1em, .5em);
   }
-  section {
+  .section {
     height: 40vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
     border-bottom: 1px black solid;
     margin-bottom: 5rem;
   }
+
+
 
 </style>
