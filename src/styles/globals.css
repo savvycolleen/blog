@@ -35,6 +35,10 @@ html.dark {
   color:#000000;
 }
 
+.dark section {
+  border-bottom: 1px white solid;
+}
+
 /* nav styles */
 
 .hamburger {
@@ -48,6 +52,10 @@ html.dark {
   height: 5px;
   margin-bottom: 10px;
   background-color: #000000;
+}
+
+.dark .hamburger .line {
+  background-color: white;
 }
 
 .nav-links {
@@ -72,6 +80,15 @@ html.dark {
 .nav-links a:link,
 .nav-links a:visited {
   color: black;
+}
+
+.dark a:link, 
+.dark a:visited {
+  color: white;
+}
+
+a:link, a:visited {
+  color:#000000
 }
 
 .nav-links a:hover,
