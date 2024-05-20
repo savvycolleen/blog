@@ -1,13 +1,21 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle ="Home Page";
-import Greeting from "../components/Greeting";
+import Hero from "../components/Hero.astro";
+import Welcome from "../components/Welcome.astro";
+import Explore from '../components/Explore.astro';
 
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-	<h1>savvydoes</h1>
-	<h1>Welcome to the blog of Savannah Acevedo</h1>
-	<h2>My Awesome Blog Subtitle</h2>
-	<Greeting client:load messages={["Hej", "Hallo", "Hola"]} />
+<BaseLayout>
+	<Hero />
+	<Welcome />
+	<Explore />
 </BaseLayout>
+
+<style>
+	body {
+		max-width: 100ch;
+	}
+</style>
+
