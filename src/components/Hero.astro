@@ -2,27 +2,31 @@
 
 ---
 
-<section class="section dark">
+<section class="hero-grid dark">
   <h1 class="hero">savvydoes</h1>
 </section>
 
 <style>
 
-  .dark section {
-    border-bottom: 1px white solid;
-  }
-
   .hero {
     font-family: "Playfair Display", sans-serif;
     font-size: clamp(4rem, 1.1429rem + 12.1905vw, 8rem);
     text-align: right;
-    vertical-align: bottom;
-    padding-top: min(1em, .5em);
   }
-  .section {
+  .hero-grid {
     height: 40vh;
     border-bottom: 1px black solid;
     margin-bottom: 5rem;
+    display: grid;
+    grid-template-areas: "hero";
+    width: 100%;
+    align-items: end;
+    h1 {
+      grid-area: hero;
+    }
+  }
+  .dark .hero-grid {
+    border-bottom: 1px white solid;
   }
 
 
