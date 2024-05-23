@@ -9,8 +9,8 @@ author: 'Savannah Acevedo'
 #     alt: 'The full Astro logo.'
 tags: ["astro", "blogging", "learning in public"]
 ---
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
-While I am currently updating this to actually be my blog, I am feeling <em>very</em> sentimental about my first blog post and can't bring myself to delete it. So she'll stay for now. 😅
+Welcome to my new blog about learning Astro! Here, I will share my learning journey as I build a new website.
+While I am currently updating this to actually be my blog, I am feeling _very_ sentimental about my first blog post and can't bring myself to delete it. So she'll stay for now. 😅
 
 ## What I've accomplished
 

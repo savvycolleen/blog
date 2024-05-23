@@ -2,7 +2,7 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: My Second Blog Post
 author: Savannah Acevedo
-description: "After learning some Astro, I couldn't stop!"
+description: "In the making! Come back soon!"
 image:
     url: "https://docs.astro.build/assets/arc.webp"
     alt: "Thumbnail of Astro arcs."

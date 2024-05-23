@@ -5,15 +5,13 @@ const pageTitle = "About Savannah";
 const identity = {
 	firstName: "Savannah",
 	country: "United States",
-	occupation: "Software Engineer",
-	hobbies: ["reading", "learning", "crocheting"],
+	occupation: "Software Engineer & Elementary Educator",
+	hobbies: ["reading", "crocheting", "obssessing"],
 };
 
 const skills = ["HTML", "CSS", "Javascript", "React", "Astro", "Next.js", "Node.js", "MongoDB"];
 
-const happy = true;
-const finished = true;
-const goal = 3;
+
 
 const skillColor = "navy";
 const fontWeight = "bold";
@@ -26,17 +24,16 @@ const textCase = "uppercase";
 	<p>Here are some facts about me:</p>
 	<ul>
 		<li>My name is {identity.firstName}</li>
-		<li>I live in {identity.country}, and I am a {identity.occupation}.</li>
+		<li>I live in the {identity.country}, and I am a {identity.occupation}.</li>
 		<li>My hobbies are {identity.hobbies[0]}, {identity.hobbies[1]}, and {identity.hobbies[2]}.</li>
 	</ul>
-	<p>My skills are:</p>
-	<ul>
-		{skills.map((skill) => <li class="skill">{skill}</li>)}
-	</ul>
+	<h2>What's With the Blog Name?</h2>
+	<p>I have crocheted on again, off again for most of my life. A few years ago, I thought it would be fun to create a public account to show what I was working on & learning. I went with one of my nicknames + what I was doing (yarn 😅), and my first public profile was born: <a href="https://www.instagram.com/savvydoesyarn/"><em>savvydoesyarn</em></a></p>
+	<p>Once I started my tech journey and needed to create new social accounts, I stuck with the pattern and became <em>savvydoestech</em>. So while the account you'll see linked here are my tech accounts, I went for a more generalized blog name. Thank you for reading more info on that than you probably ever wanted to know.</p>
+	<h2>What You Can Expect</h2>
+	<p>I've found that anytime I am trying something new (...which is often--<em>thank you, ADHD!</em>), I get deep in the trenches with finding resources, getting stuck, problem-solving, and getting unstuck over and over again. As I constantly benefit from people who put themselves out there to share their knowledge and even their failures, I am here to do the same.</p>
+	<p>So here, you can expect to see: transparency, successes, failures, learning/building in public, lessons learned, and resources used.</p>
+	<h2>Let's Be Friends</h2>
+	<p>In case you didn't believe when mentioned above that I love making friends, I'm iterating it here: be my friend! Connect with me and tell me who you are and what you are learning, too. Everything in life is better done together!</p>
 
-	{happy && <p>I am happy to be learning Astro!</p>}
-
-	{finished && <p>I finished this tutorial!</p>}
-
-	{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 </BaseLayout>
