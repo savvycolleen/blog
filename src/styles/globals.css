@@ -7,10 +7,21 @@ html {
 body {
   margin: 0 auto;
   width: 100%;
-  max-width: 80ch;
-  min-width: fit-content;
   padding: 1rem;
   line-height: 1.5;
+}
+
+@media screen and (max-width: 494px) {
+  body {
+    min-width: fit-content;
+  }
+  
+}
+
+@media screen and (min-width: 495px) {
+  body {
+    max-width: 80ch;
+  }
 }
 
 * {
